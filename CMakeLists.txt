@@ -35,7 +35,7 @@ if (WIN32)
 		OUTPUT_NAME "lua5.1"
 		PREFIX ""
 	)
-	target_link_libraries(luaproxy lua)
+	target_link_libraries(luaproxy lualib)
 
 	# Output the executable into the $/Server folder, so that Cuberite can find it:
 	set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/Server)
